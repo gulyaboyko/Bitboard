@@ -10,6 +10,10 @@
 		AE7147A0248569550016A459 /* Bitboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE714796248569550016A459 /* Bitboard.framework */; };
 		AE7147A5248569550016A459 /* BitboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7147A4248569550016A459 /* BitboardTests.swift */; };
 		AE7147A7248569550016A459 /* Bitboard.h in Headers */ = {isa = PBXBuildFile; fileRef = AE714799248569550016A459 /* Bitboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE7147B1248569630016A459 /* Bitboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7147B0248569630016A459 /* Bitboard.swift */; };
+		AE7147B32485696C0016A459 /* Bitboard+FEN.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7147B22485696C0016A459 /* Bitboard+FEN.swift */; };
+		AE7147B4248569800016A459 /* Bitboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7147B0248569630016A459 /* Bitboard.swift */; };
+		AE7147B5248569820016A459 /* Bitboard+FEN.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7147B22485696C0016A459 /* Bitboard+FEN.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,8 @@
 		AE71479F248569550016A459 /* BitboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE7147A4248569550016A459 /* BitboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitboardTests.swift; sourceTree = "<group>"; };
 		AE7147A6248569550016A459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE7147B0248569630016A459 /* Bitboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bitboard.swift; sourceTree = "<group>"; };
+		AE7147B22485696C0016A459 /* Bitboard+FEN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bitboard+FEN.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,8 @@
 			children = (
 				AE714799248569550016A459 /* Bitboard.h */,
 				AE71479A248569550016A459 /* Info.plist */,
+				AE7147B0248569630016A459 /* Bitboard.swift */,
+				AE7147B22485696C0016A459 /* Bitboard+FEN.swift */,
 			);
 			path = Bitboard;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 				TargetAttributes = {
 					AE714795248569550016A459 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					AE71479E248569550016A459 = {
 						CreatedOnToolsVersion = 11.3;
@@ -195,6 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE7147B32485696C0016A459 /* Bitboard+FEN.swift in Sources */,
+				AE7147B1248569630016A459 /* Bitboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE7147B5248569820016A459 /* Bitboard+FEN.swift in Sources */,
+				AE7147B4248569800016A459 /* Bitboard.swift in Sources */,
 				AE7147A5248569550016A459 /* BitboardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +353,7 @@
 		AE7147AB248569550016A459 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = UBR9UU276M;
@@ -356,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gulya.boiko.Bitboard;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +379,7 @@
 		AE7147AC248569550016A459 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = UBR9UU276M;
@@ -388,6 +404,7 @@
 		AE7147AE248569550016A459 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UBR9UU276M;
 				INFOPLIST_FILE = BitboardTests/Info.plist;
@@ -406,6 +423,7 @@
 		AE7147AF248569550016A459 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UBR9UU276M;
 				INFOPLIST_FILE = BitboardTests/Info.plist;
