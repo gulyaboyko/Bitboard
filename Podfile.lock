@@ -1,0 +1,21 @@
+PODS:
+  - AlgoTester (0.0.1)
+
+DEPENDENCIES:
+  - "AlgoTester (from `git@github.com:gulyaboyko/OTUS_ALGO.git`)"
+
+EXTERNAL SOURCES:
+  AlgoTester:
+    :git: "git@github.com:gulyaboyko/OTUS_ALGO.git"
+
+CHECKOUT OPTIONS:
+  AlgoTester:
+    :commit: 88d744146abcb2318cdd9166d7ffeac0ee98c519
+    :git: "git@github.com:gulyaboyko/OTUS_ALGO.git"
+
+SPEC CHECKSUMS:
+  AlgoTester: 8ae6e78c01dfcf2e62849354d7aef4d3f8f74d5e
+
+PODFILE CHECKSUM: a018587888b34e90cfd954167858d2de97938ecb
+
+COCOAPODS: 1.7.5

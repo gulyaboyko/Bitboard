@@ -1,0 +1,6 @@
+framework module AlgoTester {
+  umbrella header "AlgoTester-umbrella.h"
+
+  export *
+  module * { export * }
+}

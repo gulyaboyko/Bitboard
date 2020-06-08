@@ -8,21 +8,13 @@
 
 import XCTest
 @testable import Bitboard
+import AlgoTester
 
 final class BitboardTests: XCTestCase {
 
     func test() {
-        let sut = Bitboard()
-        
-        print(sut.findBishopMoves(place: 137438953472, opponentPlaces: 10273871076796416, cooperatorPlaces: 2326721290568704))
+        let sut = Tester(task: Bitboard(), bundleID: "com.gulya.boiko.Bitboard")
+        sut.runTests(from: 30, to: 39)
     }
 
 }
-
-//        print(sut.findQueenMoves(cell: 0))
-//        print(sut.findQueenMoves(cell: 1))
-//        print(sut.findQueenMoves(cell: 35))
-//        print(sut.findQueenMoves(cell: 32))
-//        print(sut.findQueenMoves(cell: 39))
-//        print(sut.findQueenMoves(cell: 56))
-//        print(sut.findQueenMoves(cell: 63))

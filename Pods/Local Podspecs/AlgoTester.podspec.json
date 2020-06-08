@@ -1,0 +1,23 @@
+{
+  "name": "AlgoTester",
+  "version": "0.0.1",
+  "summary": "AlgoTester module",
+  "description": "Tester for education reason",
+  "homepage": "https://github.com/gulyaboyko/OTUS_ALGO",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Gulya Boiko": "gulya.nadym@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/gulyaboyko/OTUS_ALGO.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "AlgoTester/**/*.{swift,h,m}",
+  "resources": "AlgoTester/**/*.{lproj,storyboard,xcdatamodeld,xib,nib,xcassets,json}"
+}
